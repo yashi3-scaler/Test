@@ -24,4 +24,37 @@ git commit -m "Initial commit" -m "Some description"
 8) Now how we can push our code 
 git push origin master // here origin is the location and master is branch where code is to be pushed
 
+LOCAL SETUP
+1) When we dont clone up the repository tha above processs gives us fatal for doing so on our local -- we need to create a git repo 
+  and then do follow this --
+  a) git init // initializes directory as git repository and we will get .git directory in the path.
+  b) git status
+  c) git add .
+  d) git commit -m "Initial"
+  e) Now for pushing this what to do because we have not cloned it so we dont have a link where it has to be pushed so for doing this we will have to create a new repository on github. Then follow
+       i) git remote add origin <your copied ssh url of new repository>
+       ii) git remote -v // checks your repo
+       iii) git push origin master
+ 
+2) shortcut- To set not typing again and again whole (git push origin master) we can set origin master with upstream and later on to push changes we can just write git push
+ and command to set upstream is 
+                        git push -u origin master
+                        
+ 
+ GIT BRANCHING With example
+ 
+ 1) git branch // gives you on which branch you are present in the repo
+ 2) git checkout -b <name of your branch> //it creates a new branch from the branch you
+  are present in
+   example - git checkout -b feature
+ 3) Now if you see in which branch you are present you will see you have been switched to newly created branch (using git branch command).
+ git branch // outputs feature
+ 4) To switch between branches we use the command- 
+        git checkout <name of branch where you want to checkout>
+        example- git checkout master
+        output- switched to master branch
+        git checkout feature
+        output- switched to feature branch
+        
+ 5) Now say if you make changes to branch(feature) 
  
