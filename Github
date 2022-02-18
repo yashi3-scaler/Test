@@ -1,0 +1,27 @@
+GITHUB COMMANDS ---
+
+1) Clone- 
+git clone <URL OF GIT REPO>
+
+2) List all the directories/files in the path
+ls -la
+
+3) Show all the files with changes (updated, created or deleted)
+git status
+
+4) Adds all the changes that are done to your file or some new file has been added or deleted
+git add .
+
+5) Now we have added they are ready for commit {-m stands for message}
+git commit -m "Initial commit" // this will be just the name for the commit 
+
+6) To add description with the name of the commit we follow this command
+git commit -m "Initial commit" -m "Some description"
+
+7) To push something to your github account you need to prove that you are only the owner of the account. So you will have to connect your local machine to github account somehow. This is done by using SSH keys. So add ssh key following github document commands. Follow this link--
+{https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh}
+
+8) Now how we can push our code 
+git push origin master // here origin is the location and master is branch where code is to be pushed
+
+ 
